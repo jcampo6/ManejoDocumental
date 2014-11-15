@@ -1,0 +1,1710 @@
+<!DOCTYPE html><html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>
+        Unit Test Results
+     - All tests</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="report" class="container container_8">
+<div class="grid_6 alpha">
+<div class="grailslogo"></div>
+<h1>
+        Unit Test Results
+     - All tests </h1>
+<p class="intro">
+                        Executed
+                        64
+                        tests
+                    
+                        with
+                        9 errors
+
+                        and
+                        20 failures
+                        .
+                    </p>
+</div>
+<div class="grid_2 omega">
+<nav id="navigationlinks">
+<p>
+<a href="failed.html">
+                    Tests with failure and errors
+                </a>
+</p>
+<p>
+<a href="index.html">
+                    Package summary
+                </a>
+</p>
+<p>
+<a href="all.html">
+                    Show all tests
+                </a>
+</p>
+</nav>
+</div>
+<div class="clear"></div>
+<div class="testsuite failure">
+<div class="header">
+<h2>ClienteControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        4 failures
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 6.699 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+model.clienteInstanceCount == 0
+|     |                    |
+|     null                 false
+[listaClientes:[], num:0]
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+model.clienteInstanceCount == 0
+|     |                    |
+|     null                 false
+[listaClientes:[], num:0]
+
+	at crmcuc.ClienteControllerSpec.Test the index action returns the correct model(ClienteControllerSpec.groovy:25)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.19 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.08 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+model.clienteInstance!= null
+|     |              |
+[:]   null           false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+model.clienteInstance!= null
+|     |              |
+[:]   null           false
+
+	at crmcuc.ClienteControllerSpec.Test the save action correctly persists an instance(ClienteControllerSpec.groovy:44)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.04 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.03 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.04 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+response.redirectedUrl == '/cliente/index'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@2d0a01e4
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == '/cliente/index'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@2d0a01e4
+
+	at crmcuc.ClienteControllerSpec.Test the update action performs an update on a valid domain instance(ClienteControllerSpec.groovy:97)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.03 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+response.redirectedUrl == '/cliente/index'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@501ef9df
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == '/cliente/index'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@501ef9df
+
+	at crmcuc.ClienteControllerSpec.Test that the delete action deletes an instance if it exists(ClienteControllerSpec.groovy:127)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+x=null
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite failure">
+<div class="header">
+<h2>ContactoControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        3 failures
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.334 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.03 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.03 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+model.contactoInstance!= null
+|     |               |
+[:]   null            false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+model.contactoInstance!= null
+|     |               |
+[:]   null            false
+
+	at crmcuc.ContactoControllerSpec.Test the save action correctly persists an instance(ContactoControllerSpec.groovy:44)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.04 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.04 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.03 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+response.redirectedUrl == '/contacto/index'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@71884b88
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == '/contacto/index'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@71884b88
+
+	at crmcuc.ContactoControllerSpec.Test the update action performs an update on a valid domain instance(ContactoControllerSpec.groovy:97)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.03 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+response.redirectedUrl == '/contacto/index'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@67f56c9a
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == '/contacto/index'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@67f56c9a
+
+	at crmcuc.ContactoControllerSpec.Test that the delete action deletes an instance if it exists(ContactoControllerSpec.groovy:127)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>OpcionControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        2 errors
+
+                        and
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.234 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.04 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.403 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead </b>
+</p>
+<pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at crmcuc.OpcionController.tt__save_closure9_closure14(OpcionController.groovy:43)
+	at crmcuc.OpcionController.$tt__save(OpcionController.groovy:40)
+	at crmcuc.OpcionControllerSpec.Test the save action correctly persists an instance(OpcionControllerSpec.groovy:54)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.03 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.02 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.072 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at crmcuc.OpcionControllerSpec.Test the update action performs an update on a valid domain instance(OpcionControllerSpec.groovy:122)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.03 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+Opcion.count() == 1
+       |       |
+       0       false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+Opcion.count() == 1
+       |       |
+       0       false
+
+	at crmcuc.OpcionControllerSpec.Test that the delete action deletes an instance if it exists(OpcionControllerSpec.groovy:142)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>OperacionControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        2 errors
+
+                        and
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.34 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.034 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.066 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead </b>
+</p>
+<pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at crmcuc.OperacionController.tt__save_closure9_closure14(OperacionController.groovy:43)
+	at crmcuc.OperacionController.$tt__save(OperacionController.groovy:40)
+	at crmcuc.OperacionControllerSpec.Test the save action correctly persists an instance(OperacionControllerSpec.groovy:54)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.018 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.02 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.07 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at crmcuc.OperacionControllerSpec.Test the update action performs an update on a valid domain instance(OperacionControllerSpec.groovy:122)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.02 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+Operacion.count() == 1
+          |       |
+          0       false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+Operacion.count() == 1
+          |       |
+          0       false
+
+	at crmcuc.OperacionControllerSpec.Test that the delete action deletes an instance if it exists(OperacionControllerSpec.groovy:142)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite failure">
+<div class="header">
+<h2>ParametroControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        3 failures
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.22 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.03 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.02 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+model.parametroInstance!= null
+|     |                |
+[:]   null             false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+model.parametroInstance!= null
+|     |                |
+[:]   null             false
+
+	at crmcuc.ParametroControllerSpec.Test the save action correctly persists an instance(ParametroControllerSpec.groovy:44)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.02 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.02 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.02 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+response.redirectedUrl == '/parametro/index'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@3e20b3ca
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == '/parametro/index'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@3e20b3ca
+
+	at crmcuc.ParametroControllerSpec.Test the update action performs an update on a valid domain instance(ParametroControllerSpec.groovy:97)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.02 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+response.redirectedUrl == '/parametro/index'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@151c33bd
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == '/parametro/index'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@151c33bd
+
+	at crmcuc.ParametroControllerSpec.Test that the delete action deletes an instance if it exists(ParametroControllerSpec.groovy:127)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite failure">
+<div class="header">
+<h2>PersonaControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        3 failures
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.18 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.03 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.04 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+model.personaInstance!= null
+|     |              |
+[:]   null           false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+model.personaInstance!= null
+|     |              |
+[:]   null           false
+
+	at crmcuc.PersonaControllerSpec.Test the save action correctly persists an instance(PersonaControllerSpec.groovy:44)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.03 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.03 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.03 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+response.redirectedUrl == '/persona/index'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@3c95629b
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == '/persona/index'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@3c95629b
+
+	at crmcuc.PersonaControllerSpec.Test the update action performs an update on a valid domain instance(PersonaControllerSpec.groovy:97)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.043 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+response.redirectedUrl == '/persona/index'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@7941e594
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == '/persona/index'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@7941e594
+
+	at crmcuc.PersonaControllerSpec.Test that the delete action deletes an instance if it exists(PersonaControllerSpec.groovy:127)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>RolControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        2 errors
+
+                        and
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.227 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.021 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.076 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead </b>
+</p>
+<pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at crmcuc.RolController.tt__save_closure9_closure14(RolController.groovy:43)
+	at crmcuc.RolController.$tt__save(RolController.groovy:40)
+	at crmcuc.RolControllerSpec.Test the save action correctly persists an instance(RolControllerSpec.groovy:54)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.03 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.02 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.05 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at crmcuc.RolControllerSpec.Test the update action performs an update on a valid domain instance(RolControllerSpec.groovy:122)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.03 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+Rol.count() == 1
+    |       |
+    0       false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+Rol.count() == 1
+    |       |
+    0       false
+
+	at crmcuc.RolControllerSpec.Test that the delete action deletes an instance if it exists(RolControllerSpec.groovy:142)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>UsuarioControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        2 errors
+
+                        and
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.17 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.02 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.096 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead </b>
+</p>
+<pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at crmcuc.UsuarioController.tt__save_closure9_closure14(UsuarioController.groovy:43)
+	at crmcuc.UsuarioController.$tt__save(UsuarioController.groovy:40)
+	at crmcuc.UsuarioControllerSpec.Test the save action correctly persists an instance(UsuarioControllerSpec.groovy:54)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.026 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.03 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.068 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at crmcuc.UsuarioControllerSpec.Test the update action performs an update on a valid domain instance(UsuarioControllerSpec.groovy:122)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.034 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+Usuario.count() == 1
+        |       |
+        0       false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+Usuario.count() == 1
+        |       |
+        0       false
+
+	at crmcuc.UsuarioControllerSpec.Test that the delete action deletes an instance if it exists(UsuarioControllerSpec.groovy:142)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite failure">
+<div class="header">
+<h2>ValorParametroControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        3 failures
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.27 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.041 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.039 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+model.valorParametroInstance!= null
+|     |                     |
+[:]   null                  false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+model.valorParametroInstance!= null
+|     |                     |
+[:]   null                  false
+
+	at crmcuc.ValorParametroControllerSpec.Test the save action correctly persists an instance(ValorParametroControllerSpec.groovy:44)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.021 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.03 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.01 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+response.redirectedUrl == '/valorParametro/index'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@4928574a
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == '/valorParametro/index'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@4928574a
+
+	at crmcuc.ValorParametroControllerSpec.Test the update action performs an update on a valid domain instance(ValorParametroControllerSpec.groovy:97)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.02 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+response.redirectedUrl == '/valorParametro/index'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@40b22224
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == '/valorParametro/index'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@40b22224
+
+	at crmcuc.ValorParametroControllerSpec.Test that the delete action deletes an instance if it exists(ValorParametroControllerSpec.groovy:127)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>SeguridadServiceSpec</h2>
+<h3>
+                        A single test executed
+                    
+                        with
+                        one error
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="test autorizacion">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">test autorizacion</b>
+</p>
+<p class="summary">Executed in 0.08 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot invoke method autorizacion() on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot invoke method autorizacion() on null object
+	at crmcuc.SeguridadServiceSpec.test autorizacion(SeguridadServiceSpec.groovy:19)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from test autorizacion--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from test autorizacion--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+<!--
+            Parses JUnit output and associates it with the corresponding test case
+        -->
+<script language="javascript">
+
+
+/**
+ * The JUnit report format is incredibly stuipd in the
+ * sense that it accumulates output from all test methods
+ * into a single xml node.
+ */
+(function() {
+
+    var outputElements = findOutputElements();
+    for (var i in outputElements) {
+        var outputElement = outputElements[i];
+        var textOutput = outputElement.element.firstChild.nodeValue;
+        var header = outputElement.getHeader();
+        appendTestMethodOutput(textOutput, header);
+    }
+
+    function findOutputElements() {
+        var outputElements = [];
+        var preElements = document.getElementsByTagName("pre");
+        for (var i in preElements) {
+            var preElement = preElements[i];
+            var className = preElement.className || "";
+            if (className.indexOf("stdout") >= 0) {
+                var outputElement = new OutputElement(preElement, "output");
+                outputElements.push(outputElement);
+            } else if (className.indexOf("syserr") >= 0) {
+                var outputElement = new OutputElement(preElement, "error");
+                outputElements.push(outputElement);
+            }
+        }
+
+        return outputElements;
+    }
+
+    function OutputElement(element, type) {
+        this.element = element;
+        this.type = type;
+
+        this.getHeader = function() {
+            if (type === "output") {
+                return "System output";
+            } else if ("error") {
+                return "System error";
+            }
+        }
+    }
+
+    function appendTestMethodOutput(text, header) {
+        var testOutput = new TestMethodOutput(header);
+
+        var lines = text.split(/\r\n|\r|\n/);
+        for (var i in lines) {
+            var line = lines[i];
+            var matches = line.match(/^--Output from (.*)--$/);
+            if (matches !== null && matches.length == 2) {
+                testOutput.flushToDom();
+                testOutput.testName = matches[1];
+            } else {
+                testOutput.addLine(line);
+            }
+        }
+
+        testOutput.flushToDom();
+    }
+
+    function TestMethodOutput(header) {
+        this.header = header;
+        this.testName = undefined;
+        this.buffer = "";
+
+        this.addLine = function(line) {
+            this.buffer += line + "\n";
+        }
+
+        this.flushToDom = function() {
+            if (this.testName !== undefined) {
+                var domNode = getTestcaseElementByName(this.testName);
+                if (domNode !== undefined && trimString(this.buffer).length > 0) {
+                    this.appendTo(domNode);
+                }
+
+                this.reset();
+            }
+        }
+
+        this.appendTo = function(domNode) {
+            var node = document.createElement("div");
+            node.innerHTML = '<p><b class="message">' + header + '</b></p>';
+
+            var preNode = document.createElement("pre");
+            preNode.appendChild(document.createTextNode(this.buffer));
+            node.appendChild(preNode);
+
+            var outputContainer = findElementByTagClassAndParent("div", "outputinfo", domNode);
+            outputContainer.appendChild(node);
+        }
+
+        this.reset = function() {
+            this.methodName = undefined;
+            this.buffer = "";
+        }
+    }
+
+    function getTestcaseElementByName(name) {
+        var divElements = document.getElementsByTagName("div");
+        var elementCount = divElements.length;
+        for (var i=0; i<elementCount; i++) {
+            var el = divElements[i];
+            if (el.getAttribute("data-name") === name) {
+                return el;
+            }
+        }
+    }
+
+    function findElementByTagClassAndParent(tagName, className, parentNode) {
+        var elements = parentNode.getElementsByTagName(tagName);
+        for (var i in elements) {
+            var element = elements[i];
+
+            // Not 100% correct, but good enough here
+            if (element.className !== undefined && element.className.indexOf(className) >= 0) {
+                return element;
+            }
+        }
+    }
+
+    function trimString(str) {
+        return str.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
+    }
+
+})();
+
+        </script>
+</body>
+</html>

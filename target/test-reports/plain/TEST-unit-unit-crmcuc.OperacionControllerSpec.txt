@@ -1,0 +1,55 @@
+Testsuite: crmcuc.OperacionControllerSpec
+Tests run: 7, Failures: 1, Errors: 2, Time elapsed: 0,59 sec
+------------- Standard Output ---------------
+--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+------------- ---------------- ---------------
+
+Testcase: Test the index action returns the correct model took 0,34 sec
+Testcase: Test the create action returns the correct model took 0,034 sec
+Testcase: Test the save action correctly persists an instance took 0,065 sec
+	Caused an ERROR
+Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at crmcuc.OperacionController.tt__save_closure9_closure14(OperacionController.groovy:43)
+	at crmcuc.OperacionController.$tt__save(OperacionController.groovy:40)
+	at crmcuc.OperacionControllerSpec.Test the save action correctly persists an instance(OperacionControllerSpec.groovy:54)
+
+Testcase: Test that the show action returns the correct model took 0,018 sec
+Testcase: Test that the edit action returns the correct model took 0,02 sec
+Testcase: Test the update action performs an update on a valid domain instance took 0,07 sec
+	Caused an ERROR
+Cannot get property 'id' on null object
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at crmcuc.OperacionControllerSpec.Test the update action performs an update on a valid domain instance(OperacionControllerSpec.groovy:122)
+
+Testcase: Test that the delete action deletes an instance if it exists took 0,02 sec
+	FAILED
+Condition not satisfied:
+
+Operacion.count() == 1
+          |       |
+          0       false
+
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+Operacion.count() == 1
+          |       |
+          0       false
+
+	at crmcuc.OperacionControllerSpec.Test that the delete action deletes an instance if it exists(OperacionControllerSpec.groovy:142)
+
