@@ -40,6 +40,15 @@
 	<g:textField name="estadoValorParametro" maxlength="1" value="${valorParametroInstance?.estadoValorParametro}"/>
         </div>
 </div>
+<div class="fieldcontain ${hasErrors(bean: valorParametroInstance, field: 'parametros.id', 'error')} ">
+	<label class="col-lg-2 control-label" for="parametros.id">
+		<g:message code="valorParametro.estadoValorParametro.label" default="Estado" />
+		
+	</label>
+        <div class="form-group col-lg-10">
+	<g:textField name="estadoValorParametro" maxlength="1" value="${ParametroInstance?.id}"/>
+        </div>
+</div>
 </div>
   <script>                    
              <!-- calcula el alto del bloque htm del detalle de encaberzado respectivo --> 

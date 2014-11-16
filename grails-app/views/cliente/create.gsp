@@ -27,10 +27,11 @@
 			</ul>
 			</g:hasErrors>
 			<g:form class="form-horizontal"  url="[resource:clienteInstance, action:'save']" >
-			<g:submitButton name="create" class="btn btn-success" value="${message(code: 'default.button.create.label', default: 'Guardar')}" />	
-                        <hr>    
-                        <fieldset class="form">
+			<fieldset class="form">
 					<g:render template="form"/>
+				</fieldset>
+				<fieldset class="buttons">
+					<g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />
 				</fieldset>				
 			</g:form>
 		</div>

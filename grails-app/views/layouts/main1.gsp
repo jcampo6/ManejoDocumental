@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>CRM CUC</title>
+    <title>Manejo Documental ISO 9000</title>
 
     <!-- Bootstrap Core CSS -->
      <link href="${resource(dir:'sbadmin2/css', file: 'bootstrap.min.css')}" rel="stylesheet">
@@ -51,11 +51,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">CRM CUC</a>
+                <a class="navbar-brand" href="/crmcuc/mainPanel/index">Manejo Documental ISO 9000</a>
             </div>
             <!-- /.navbar-header -->
 
             <ul class="nav navbar-top-links navbar-right">
+<%--
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
@@ -85,18 +86,14 @@
                     </ul>
                     <!-- /.dropdown-alerts -->
                 </li>
-                <!-- /.dropdown -->
+                <!-- /.dropdown --> --%>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> Mi Perfil</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Config</a>
-                        </li>
                         <li class="divider"></li>
-                        <li><a href="/crmcuc/login/cerrarSesion"><i class="fa fa-sign-out fa-fw"></i> Salir</a>
+                        <li><a href="/crmcuc/login/cerrarSesion"><i class="fa fa-sign-out fa-fw"></i> Cerrar Sesion</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -108,7 +105,7 @@
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
-                        <li class="sidebar-search">
+                        <%--<li class="sidebar-search">
                             <div class="input-group custom-search-form">
                                 <input type="text" class="form-control" placeholder="Search...">
                                 <span class="input-group-btn">
@@ -118,14 +115,26 @@
                             </span>
                             </div>
                             <!-- /input-group -->
-                        </li>
+                        </li> --%>
                         <%
                             def xmenu=seguridadService.getMenu(session["idUsuario"]) 
                          %>
                          <li>
-                            <a class="active" href="index.html"><i class="glyphicon glyphicon-home"></i> Inicio</a>
+                            <a class="active" href="/crmcuc/mainPanel/index"><i class="glyphicon glyphicon-home"></i> Inicio</a>
+                        </li>                        
+                        <li>
+                            <a class="active" href="/crmcuc/proceso/index"><i class="glyphicon glyphicon-list-alt"></i> Procesos</a>
                         </li>
-                          <g:each in="${xmenu}" status="i" var="menu">
+                        <li>
+                            <a class="active" href="/crmcuc/documento/index"><i class="glyphicon glyphicon-list-alt"></i> Documentos</a>
+                        </li>
+                        <li>
+                            <a class="active" href="/crmcuc/parametro/index"><i class="glyphicon glyphicon-list-alt"></i> Parametrización</a>
+                        </li>
+                        <li>
+                            <a class="active" href="/crmcuc/valorParametro/index"><i class="glyphicon glyphicon-list-alt"></i> Parametrización</a>
+                        </li>
+                         -- <g:each in="${xmenu}" status="i" var="menu">
                               <li>   <a class="active" href="${menu[1]}"><i class="${menu[2]}"></i> ${menu[0]}</a>
                              </li>
                           </g:each>

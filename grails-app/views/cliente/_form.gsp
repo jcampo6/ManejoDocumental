@@ -14,8 +14,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: clienteInstance, field: 'email', 'error')} ">
 	<label class="col-lg-2 control-label"  for="email">
-		<g:message code="cliente.email.label" default="Email" />
-		
+		<g:message code="cliente.email.label" default="Email" />		
 	</label>
          <div class="col-lg-10 form-group">
 	<g:field type="email" name="email" maxlength="120" value="${clienteInstance?.email}"/>
