@@ -37,9 +37,10 @@
 				<g:each in="${valorParametroInstanceList}" status="i" var="valorParametroInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					        <td>${valorParametroInstance?.id}</td>
-						<td><g:link action="show" id="${valorParametroInstance.id}">${fieldValue(bean: valorParametroInstance, field: "valor")}</g:link></td>
-					
-						<td>${fieldValue(bean: valorParametroInstance, field: "descripcion")}</td>
+                                                
+						<td><g:link action="show" id="${valorParametroInstance.id}">${fieldValue(bean: valorParametroInstance, field: "valor")}</g:link></td>										
+                                                
+                                                <td>${fieldValue(bean: valorParametroInstance, field: "descripcion")}</td>
 					
 						<td>${fieldValue(bean: valorParametroInstance, field: "orden")}</td>
 					

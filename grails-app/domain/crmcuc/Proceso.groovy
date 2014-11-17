@@ -16,4 +16,8 @@ class Proceso {
         nombre  nullable:false,blank:false,maxsize:100
         macroProceso    nullable:false
     }
+    
+    String  toString(){
+        return nombre        
+    } 
 }

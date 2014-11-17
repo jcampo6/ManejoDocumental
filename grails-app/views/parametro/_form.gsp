@@ -31,7 +31,7 @@
 </div>
 <g:if test="${parametroInstance.id !=null}" > 
 <hr style="margin-top:10px;margin-bottom:10px;"> 
-     <iframe id="ifvalp" src="/crmcuc/valorParametro/index/${parametroInstance.id}" style="border:0;width:100%;" scrolling="no"></iframe>  
+     <iframe id="ifvalp" src="/crmcuc/valorParametro/index/${parametroInstance.id}" style="border:0;width:100%;"></iframe>  
      <script>
      IFRAME_DETALLE=$("#ifvalp");
      </script>

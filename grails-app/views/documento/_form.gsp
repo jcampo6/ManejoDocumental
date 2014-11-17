@@ -1,6 +1,6 @@
 <%@ page import="crmcuc.Documento" %>
 
-
+<g:set var="generalService" bean="generalService"/>
 
 <div class="fieldcontain ${hasErrors(bean: documentoInstance, field: 'nombre', 'error')} required">
 	<label class="col-lg-2 control-label" for="nombre">
@@ -18,7 +18,11 @@
 		<span class="required-indicator">*</span>
 	</label>
         <div class="form-group col-lg-10">
-	<g:textField name="tipoDocumento" required="" value="${documentoInstance?.tipoDocumento}"/>
+	<g:select  name="tipoDocumento" from="${generalService.getValorParametros(5)}"
+                   optionKey="id"
+                   value="${documentoInstance.tipoDocumento}"
+                   noSelection="['':'Seleccione tipo']"
+            />
         </div>
 </div>
 

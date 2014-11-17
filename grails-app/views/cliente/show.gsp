@@ -16,7 +16,7 @@
                         <a class="btn btn-danger" href="#">Borrar</a>     
                         <a class="btn btn-default" href="/crmcuc/cliente/index">Salir</a>
                         <hr style="bo:3px;border-color:#FF0000;">
-                        </div>
+                  </div>
 			<g:if test="${flash.message}">
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>

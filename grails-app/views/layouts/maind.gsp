@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>CRM CUC</title>
+    <title>Manejo Documental ISO 9000</title>
 
     <!-- Bootstrap Core CSS -->
      <link href="${resource(dir:'sbadmin2/css', file: 'bootstrap.min.css')}" rel="stylesheet">

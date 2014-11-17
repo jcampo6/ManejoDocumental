@@ -131,9 +131,6 @@
                         <li>
                             <a class="active" href="/crmcuc/parametro/index"><i class="glyphicon glyphicon-list-alt"></i> Parametrización</a>
                         </li>
-                        <li>
-                            <a class="active" href="/crmcuc/valorParametro/index"><i class="glyphicon glyphicon-list-alt"></i> Parametrización</a>
-                        </li>
                          -- <g:each in="${xmenu}" status="i" var="menu">
                               <li>   <a class="active" href="${menu[1]}"><i class="${menu[2]}"></i> ${menu[0]}</a>
                              </li>
