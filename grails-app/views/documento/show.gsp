@@ -15,57 +15,64 @@
 				<li><g:link class="list" action="index"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
 				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
 			</ul>
-		</div>
-		<div id="show-documento" class="content scaffold-show" role="main">
-			<h1><g:message code="default.show.label" args="[entityName]" /></h1>
+		</div>					
 			<g:if test="${flash.message}">
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
-			<ol class="property-list documento">
+			<table class="table">
 			
 				<g:if test="${documentoInstance?.nombre}">
-				<li class="fieldcontain">
-					<span id="nombre-label" class="property-label"><g:message code="documento.nombre.label" default="Nombre" /></span>
+				<tr class="fieldcontain">
+					<td id="nombre-label" class="property-label"><g:message code="documento.nombre.label" default="Nombre" /></td>
 					
-						<span class="property-value" aria-labelledby="nombre-label"><g:fieldValue bean="${documentoInstance}" field="nombre"/></span>
+						<td class="property-value" aria-labelledby="nombre-label"><g:fieldValue bean="${documentoInstance}" field="nombre"/></td>
 					
-				</li>
+				</tr>
 				</g:if>
 			
 				<g:if test="${documentoInstance?.tipoDocumento}">
-				<li class="fieldcontain">
-					<span id="tipoDocumento-label" class="property-label"><g:message code="documento.tipoDocumento.label" default="Tipo Documento" /></span>
+				<tr class="fieldcontain">
+					<td id="tipoDocumento-label" class="property-label"><g:message code="documento.tipoDocumento.label" default="Tipo Documento" /></td>
 					
-						<span class="property-value" aria-labelledby="tipoDocumento-label"><g:fieldValue bean="${documentoInstance}" field="tipoDocumento"/></span>
+						<td class="property-value" aria-labelledby="tipoDocumento-label"><g:fieldValue bean="${documentoInstance}" field="tipoDocumento"/></td>
 					
-				</li>
+				</tr>
 				</g:if>
 			
 				<g:if test="${documentoInstance?.fechaCreacion}">
-				<li class="fieldcontain">
-					<span id="fechaCreacion-label" class="property-label"><g:message code="documento.fechaCreacion.label" default="Fecha Creacion" /></span>
+				<tr class="fieldcontain">
+					<td id="fechaCreacion-label" class="property-label"><g:message code="documento.fechaCreacion.label" default="Fecha Creacion" /></td>
 					
-						<span class="property-value" aria-labelledby="fechaCreacion-label"><g:formatDate date="${documentoInstance?.fechaCreacion}" /></span>
+						<td class="property-value" aria-labelledby="fechaCreacion-label"><g:formatDate date="${documentoInstance?.fechaCreacion}" /></td>
 					
-				</li>
+				</tr>
 				</g:if>
 			
 				<g:if test="${documentoInstance?.estado}">
-				<li class="fieldcontain">
-					<span id="estado-label" class="property-label"><g:message code="documento.estado.label" default="Estado" /></span>
+				<tr class="fieldcontain">
+					<td id="estado-label" class="property-label"><g:message code="documento.estado.label" default="Estado" /></td>
 					
-						<span class="property-value" aria-labelledby="estado-label"><g:fieldValue bean="${documentoInstance}" field="estado"/></span>
+						<td class="property-value" aria-labelledby="estado-label"><g:fieldValue bean="${documentoInstance}" field="estado"/></td>
 					
-				</li>
+				</tr>
 				</g:if>
 			
 				<g:if test="${documentoInstance?.procesos}">
-				<li class="fieldcontain">
-					<span id="procesos-label" class="property-label"><g:message code="documento.procesos.label" default="Procesos" /></span>
+				<tr class="fieldcontain">
+					<td id="procesos-label" class="property-label"><g:message code="documento.procesos.label" default="Procesos" /></td>
 					
-						<span class="property-value" aria-labelledby="procesos-label"><g:link controller="proceso" action="show" id="${documentoInstance?.procesos?.id}">${documentoInstance?.procesos?.encodeAsHTML()}</g:link></span>
+						<td class="property-value" aria-labelledby="procesos-label"><g:link controller="proceso" action="show" id="${documentoInstance?.procesos?.id}">${documentoInstance?.procesos?.encodeAsHTML()}</g:link></td>
 					
-				</li>
+				</tr>
+				</g:if>
+			
+				<g:if test="${documentoInstance?.versionDoc}">
+				<tr class="fieldcontain">
+					<td id="versionDoc-label" class="property-label"><g:message code="documento.versionDoc.label" default="Version Doc" /></td>
+					
+						<td class="property-value" aria-labelledby="versionDoc-label"><g:fieldValue bean="${documentoInstance}" field="versionDoc"/></td>
+					
+				</tr>
 				</g:if>
 			
 			</ol>
@@ -75,6 +82,5 @@
 					<g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
 				</fieldset>
 			</g:form>
-		</div>
 	</body>
 </html>

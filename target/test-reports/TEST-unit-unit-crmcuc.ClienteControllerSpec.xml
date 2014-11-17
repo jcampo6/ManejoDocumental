@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="4" hostname="JhonHarol" name="crmcuc.ClienteControllerSpec" tests="7" time="10.921" timestamp="2014-11-17T07:46:04">
+  <properties />
+  <testcase classname="crmcuc.ClienteControllerSpec" name="Test the index action returns the correct model" time="10.038">
+    <failure message="Condition not satisfied:&#xa;&#xa;model.clienteInstanceCount == 0&#xa;|     |                    |&#xa;|     null                 false&#xa;[listaClientes:[], num:0]&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+model.clienteInstanceCount == 0
+|     |                    |
+|     null                 false
+[listaClientes:[], num:0]
+
+	at crmcuc.ClienteControllerSpec.Test the index action returns the correct model(ClienteControllerSpec.groovy:25)
+</failure>
+  </testcase>
+  <testcase classname="crmcuc.ClienteControllerSpec" name="Test the create action returns the correct model" time="0.361" />
+  <testcase classname="crmcuc.ClienteControllerSpec" name="Test the save action correctly persists an instance" time="0.102">
+    <failure message="Condition not satisfied:&#xa;&#xa;model.clienteInstance!= null&#xa;|     |              |&#xa;[:]   null           false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+model.clienteInstance!= null
+|     |              |
+[:]   null           false
+
+	at crmcuc.ClienteControllerSpec.Test the save action correctly persists an instance(ClienteControllerSpec.groovy:44)
+</failure>
+  </testcase>
+  <testcase classname="crmcuc.ClienteControllerSpec" name="Test that the show action returns the correct model" time="0.139" />
+  <testcase classname="crmcuc.ClienteControllerSpec" name="Test that the edit action returns the correct model" time="0.077" />
+  <testcase classname="crmcuc.ClienteControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.057">
+    <failure message="Condition not satisfied:&#xa;&#xa;response.redirectedUrl == &apos;/cliente/index&apos;&#xa;|        |             |&#xa;|        null          false&#xa;org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@31f6c6ab&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == &apos;/cliente/index&apos;
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@31f6c6ab
+
+	at crmcuc.ClienteControllerSpec.Test the update action performs an update on a valid domain instance(ClienteControllerSpec.groovy:97)
+</failure>
+  </testcase>
+  <testcase classname="crmcuc.ClienteControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.057">
+    <failure message="Condition not satisfied:&#xa;&#xa;response.redirectedUrl == &apos;/cliente/index&apos;&#xa;|        |             |&#xa;|        null          false&#xa;org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@51d0e9ea&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == &apos;/cliente/index&apos;
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@51d0e9ea
+
+	at crmcuc.ClienteControllerSpec.Test that the delete action deletes an instance if it exists(ClienteControllerSpec.groovy:127)
+</failure>
+  </testcase>
+  <system-out><![CDATA[--Output from Test the index action returns the correct model--
+x=null
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+  <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+</testsuite>

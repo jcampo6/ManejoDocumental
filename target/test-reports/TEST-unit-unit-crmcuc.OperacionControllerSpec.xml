@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="2" failures="1" hostname="JhonHarol" name="crmcuc.OperacionControllerSpec" tests="7" time="1.031" timestamp="2014-11-17T07:46:20">
+  <properties />
+  <testcase classname="crmcuc.OperacionControllerSpec" name="Test the index action returns the correct model" time="0.451" />
+  <testcase classname="crmcuc.OperacionControllerSpec" name="Test the create action returns the correct model" time="0.07" />
+  <testcase classname="crmcuc.OperacionControllerSpec" name="Test the save action correctly persists an instance" time="0.208">
+    <error message="Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at crmcuc.OperacionController.tt__save_closure9_closure14(OperacionController.groovy:43)
+	at crmcuc.OperacionController.$tt__save(OperacionController.groovy:40)
+	at crmcuc.OperacionControllerSpec.Test the save action correctly persists an instance(OperacionControllerSpec.groovy:54)
+</error>
+  </testcase>
+  <testcase classname="crmcuc.OperacionControllerSpec" name="Test that the show action returns the correct model" time="0.049" />
+  <testcase classname="crmcuc.OperacionControllerSpec" name="Test that the edit action returns the correct model" time="0.039" />
+  <testcase classname="crmcuc.OperacionControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.128">
+    <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at crmcuc.OperacionControllerSpec.Test the update action performs an update on a valid domain instance(OperacionControllerSpec.groovy:122)
+</error>
+  </testcase>
+  <testcase classname="crmcuc.OperacionControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.049">
+    <failure message="Condition not satisfied:&#xa;&#xa;Operacion.count() == 1&#xa;          |       |&#xa;          0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Operacion.count() == 1
+          |       |
+          0       false
+
+	at crmcuc.OperacionControllerSpec.Test that the delete action deletes an instance if it exists(OperacionControllerSpec.groovy:142)
+</failure>
+  </testcase>
+  <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+  <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+</testsuite>

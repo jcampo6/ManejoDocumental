@@ -1,0 +1,95 @@
+Testsuite: crmcuc.ClienteControllerSpec
+Tests run: 7, Failures: 4, Errors: 0, Time elapsed: 10,921 sec
+------------- Standard Output ---------------
+--Output from Test the index action returns the correct model--
+x=null
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+------------- ---------------- ---------------
+
+Testcase: Test the index action returns the correct model took 10 sec
+	FAILED
+Condition not satisfied:
+
+model.clienteInstanceCount == 0
+|     |                    |
+|     null                 false
+[listaClientes:[], num:0]
+
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+model.clienteInstanceCount == 0
+|     |                    |
+|     null                 false
+[listaClientes:[], num:0]
+
+	at crmcuc.ClienteControllerSpec.Test the index action returns the correct model(ClienteControllerSpec.groovy:25)
+
+Testcase: Test the create action returns the correct model took 0,361 sec
+Testcase: Test the save action correctly persists an instance took 0,101 sec
+	FAILED
+Condition not satisfied:
+
+model.clienteInstance!= null
+|     |              |
+[:]   null           false
+
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+model.clienteInstance!= null
+|     |              |
+[:]   null           false
+
+	at crmcuc.ClienteControllerSpec.Test the save action correctly persists an instance(ClienteControllerSpec.groovy:44)
+
+Testcase: Test that the show action returns the correct model took 0,139 sec
+Testcase: Test that the edit action returns the correct model took 0,078 sec
+Testcase: Test the update action performs an update on a valid domain instance took 0,055 sec
+	FAILED
+Condition not satisfied:
+
+response.redirectedUrl == '/cliente/index'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@31f6c6ab
+
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == '/cliente/index'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@31f6c6ab
+
+	at crmcuc.ClienteControllerSpec.Test the update action performs an update on a valid domain instance(ClienteControllerSpec.groovy:97)
+
+Testcase: Test that the delete action deletes an instance if it exists took 0,055 sec
+	FAILED
+Condition not satisfied:
+
+response.redirectedUrl == '/cliente/index'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@51d0e9ea
+
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == '/cliente/index'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@51d0e9ea
+
+	at crmcuc.ClienteControllerSpec.Test that the delete action deletes an instance if it exists(ClienteControllerSpec.groovy:127)
+

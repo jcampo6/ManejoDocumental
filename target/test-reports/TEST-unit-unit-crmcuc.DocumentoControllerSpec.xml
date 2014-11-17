@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="2" failures="1" hostname="JhonHarol" name="crmcuc.DocumentoControllerSpec" tests="7" time="2.229" timestamp="2014-11-17T07:46:16">
+  <properties />
+  <testcase classname="crmcuc.DocumentoControllerSpec" name="Test the index action returns the correct model" time="0.585" />
+  <testcase classname="crmcuc.DocumentoControllerSpec" name="Test the create action returns the correct model" time="0.093" />
+  <testcase classname="crmcuc.DocumentoControllerSpec" name="Test the save action correctly persists an instance" time="1.057">
+    <error message="Cannot redirect for object [crmcuc.Documento : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [crmcuc.Documento : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at crmcuc.DocumentoController.tt__save_closure9_closure14(DocumentoController.groovy:43)
+	at crmcuc.DocumentoController.$tt__save(DocumentoController.groovy:40)
+	at crmcuc.DocumentoControllerSpec.Test the save action correctly persists an instance(DocumentoControllerSpec.groovy:54)
+</error>
+  </testcase>
+  <testcase classname="crmcuc.DocumentoControllerSpec" name="Test that the show action returns the correct model" time="0.074" />
+  <testcase classname="crmcuc.DocumentoControllerSpec" name="Test that the edit action returns the correct model" time="0.065" />
+  <testcase classname="crmcuc.DocumentoControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.222">
+    <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at crmcuc.DocumentoControllerSpec.Test the update action performs an update on a valid domain instance(DocumentoControllerSpec.groovy:122)
+</error>
+  </testcase>
+  <testcase classname="crmcuc.DocumentoControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.089">
+    <failure message="Condition not satisfied:&#xa;&#xa;Documento.count() == 1&#xa;          |       |&#xa;          0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Documento.count() == 1
+          |       |
+          0       false
+
+	at crmcuc.DocumentoControllerSpec.Test that the delete action deletes an instance if it exists(DocumentoControllerSpec.groovy:142)
+</failure>
+  </testcase>
+  <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+  <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+</testsuite>

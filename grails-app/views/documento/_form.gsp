@@ -1,7 +1,7 @@
 <%@ page import="crmcuc.Documento" %>
 
-<g:set var="generalService" bean="generalService"/>
 
+<g:set var="generalService" bean="generalService"/>
 <div class="fieldcontain ${hasErrors(bean: documentoInstance, field: 'nombre', 'error')} required">
 	<label class="col-lg-2 control-label" for="nombre">
 		<g:message code="documento.nombre.label" default="Nombre" />
@@ -53,6 +53,16 @@
 	</label>
         <div class="form-group col-lg-10">
 	<g:select id="procesos" name="procesos.id" from="${crmcuc.Proceso.list()}" optionKey="id" required="" value="${documentoInstance?.procesos?.id}" class="many-to-one"/>
+        </div>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: documentoInstance, field: 'versionDoc', 'error')} required">
+	<label class="col-lg-2 control-label" for="versionDoc">
+		<g:message code="documento.versionDoc.label" default="Version Doc" />
+		<span class="required-indicator">*</span>
+	</label>
+        <div class="form-group col-lg-10">
+	<g:textField name="versionDoc" required="" value="${documentoInstance?.versionDoc}"/>
         </div>
 </div>
 
